@@ -139,7 +139,7 @@ if __name__ == "__main__":
         ###############################################
         # Check for userID and Password to be validated
         ############################################### # replace with local file path
-        with open("/Users/andreahamilton/PycharmProjects/CS361-IDEncryption-MicroService/loginUser.txt", "r") as checkUser:
+        with open("loginUser.txt", "r") as checkUser:
             user = checkUser.read().split(" ")
             print("Login File: Status: ", user[0])
             if user[0] != "waiting...":
@@ -151,12 +151,12 @@ if __name__ == "__main__":
         # Send Result of validation back via file handshake.
         ####################################################
         if len(thisguy) > 0: # replace with local file path
-            with open("/Users/andreahamilton/PycharmProjects/CS361-IDEncryption-MicroService/validUserResponse.txt", "w") as userResponse:
+            with open("validUserResponse.txt", "w") as userResponse:
                 userResponse.write(thisguy)
                 userResponse.close()
         ##############################################
         # Reset loginUser.txt file by.... writing out "waiting...")
         ############################################## #replace with local file path
-        with open("/Users/andreahamilton/PycharmProjects/CS361-IDEncryption-MicroService/loginUser.txt", "w") as checkUser:
+        with open("loginUser.txt", "w") as checkUser:
             checkUser.write("waiting...")
         checkUser.close()
