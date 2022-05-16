@@ -1,3 +1,7 @@
+# Andrea Hamilton
+# CS361
+# ID Encryption Microservice Demo
+
 import time
 import os
 

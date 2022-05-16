@@ -1,3 +1,7 @@
+# Andrea Hamilton
+# CS361
+# ID Encryption Microservice Code
+
 import time
 import validateUser as service
 
